@@ -39,9 +39,24 @@ $(document).ready(function(){
           location.hash = $(target).offset().top - 80;
       });
 
-      // return false;
+      return false;
 
     })
+
+    $(window).scroll(function(){
+        var scrol_top = $(window).scrollTop();
+        console.log(scrol_top);
+        
+
+        $('.page_sect_cont').each(function(i) {
+
+            if ($(this).position().top - 80 <= scrol_top) {
+                $('.side_nav').find(".active-side-nav").removeClass('active-side-nav');
+                $('.side_nav li').eq(i).addClass('active-side-nav');
+            }       
+        });
+        
+    }).scroll();
 
 
     $('.brand').owlCarousel({

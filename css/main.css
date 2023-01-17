@@ -436,11 +436,11 @@
 .page_lt_sec .lt_page_list li a:hover:after{
     width: 5px;
 }
-.page_lt_sec .lt_page_list li a.active-side-nav{
+.page_lt_sec .lt_page_list li.active-side-nav a{
     background: linear-gradient(to left,#ff8533, #e60000);
     color: #fff;
 }
-.page_lt_sec .lt_page_list li a.active-side-nav:after{
+.page_lt_sec .lt_page_list li.active-side-nav a:after{
     width: 5px;
 }
 .lt_page_list li a span{
