@@ -395,8 +395,10 @@
 	top: 90px;
 }
 .page_lt_sec .lt_page_list{
-    background: #f7f7f7;
+	background: #fff;
     margin-bottom: 40px;
+    border: solid 1px #ccc;
+    padding: 10px;
 }
 .page_lt_sec .lt_page_list h3{
     color: #292929;
@@ -410,15 +412,17 @@
     text-decoration: none;
     color: #292929;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 18px;
     font-family: 'Montserrat', sans-serif;
-    padding: 10px 20px 10px 30px;
-    background: #f7f7f7;
-    
+    padding: 10px 20px 10px 32px;
+    border-bottom: solid 1px #ccc;  
     
 }
-.page_lt_sec .lt_page_list li a:after{
+.page_lt_sec .lt_page_list li:last-child a{
+	border-bottom: 0;
+}
+/*.page_lt_sec .lt_page_list li a:after{
 	content: "";
     position: absolute;
     top: 50%;
@@ -427,25 +431,27 @@
     height: 25px;
     background: #000;
     transform: translateY(-50%);
-}
+}*/
 
 .page_lt_sec .lt_page_list li a:hover{
     background: linear-gradient(to left,#ff8533, #e60000);
     color: #fff;
+    border-color: #ff8533;
 }
-.page_lt_sec .lt_page_list li a:hover:after{
+/*.page_lt_sec .lt_page_list li a:hover:after{
     width: 5px;
-}
+}*/
 .page_lt_sec .lt_page_list li.active-side-nav a{
     background: linear-gradient(to left,#ff8533, #e60000);
     color: #fff;
+    border-color: #ff8533;
 }
-.page_lt_sec .lt_page_list li.active-side-nav a:after{
+/*.page_lt_sec .lt_page_list li.active-side-nav a:after{
     width: 5px;
-}
+}*/
 .lt_page_list li a span{
 	position: absolute;
-	left: 14px;
+	left: 10px;
 	top: 10px;
 	font-size: 15px;
 }

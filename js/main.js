@@ -1,4 +1,12 @@
 $(document).ready(function(){
+
+  //******** Mobile menu section 
+  $(".menu_bar").click(function(){
+    $(".mobile-menu").toggleClass("active_menu_nav");
+    $(".menu_bar").toggleClass("close_btn");
+  });
+
+
     function scrollTopPag(){
         $("html, body").animate({
             scrollTop: 0

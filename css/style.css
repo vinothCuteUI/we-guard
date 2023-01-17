@@ -7,6 +7,8 @@
 .first-heads{
 	background-color:#5c5c3d;
 	padding:10px 0;
+	position: relative;
+	z-index: 99;
 }
 .icos a{
 	text-decoration:none;
@@ -72,6 +74,9 @@ img{
 	box-shadow: 0 0 5px #ccc;
 	background-color: #fff;
 	transition: all 0.5s ease;
+	position: relative;
+	z-index: 99;
+	
 }
 .active_header{
 	position: fixed;
@@ -85,6 +90,64 @@ img{
 .nav-header .navbar-nav .nav-link:hover{
 	color:#e60000;
 }
+
+/* --------- Menu mobile btn ------ */
+.menu_bar{
+	/*display: none;*/
+	position: absolute;
+	right: 0px;
+	top: 15px;
+	width: 45px;
+    height: 45px;
+    z-index: 101;
+    /* line-height: 40px; */
+    padding: 6px 0;
+}
+.menu_bar .menu_btn{
+	background: linear-gradient(to left,#ff8533, #e60000);
+	width: 85%;
+	height: 4px;
+	border-radius: 5px;
+	margin: 0 auto 6px;
+	transition: all 0.5s ease;
+}
+.menu_bar.close_btn .btn_1{
+	transform: rotate(45deg) translate(5px, 8px);
+}
+.menu_bar.close_btn .btn_2{
+	transform: translateX(-60px);
+	opacity: 0;
+}
+.menu_bar.close_btn .btn_3{
+	transform:rotate(-45deg) translate(6px, -10px);
+}
+
+.mobile-menu{
+	position: fixed;
+	top: 0;
+	right: -62%;
+	width: 60%;
+	background-color: #fff;
+	padding: 120px 20px 30px 20px;
+	height: 100%;
+	z-index: 98;
+	overflow: hidden;
+	transition: all 0.5s ease;
+	box-shadow: 0 0 5px #777;
+}
+.mobile-menu.active_menu_nav{
+	right: 0%;
+}
+.mb-nav-item .mb-link a{
+	text-decoration: none;
+	display: inline-block;
+	color: #222;
+	padding: 8px 15px;
+}
+.mb-nav-item .mb-link a.mb-active{
+	color: #ff8533;
+}
+
 
 .img-sec img{
 	display: block;
