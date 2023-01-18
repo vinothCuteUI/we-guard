@@ -449,6 +449,13 @@ ul{
 }
 .ico-2{
 	font-size:25px;
+	color: #fff;
+	margin-right: 8px;
+	text-decoration: none;
+}
+.ico-2:hover{
+	color: #fff;
+	opacity: 0.5;
 }
 /*media quries*/
 @media(min-width:320px){
