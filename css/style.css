@@ -43,10 +43,14 @@
 	font-weight:700;
 	font-family: "Poppins", sans-serif;
 }
-.now{
+.now {
 	background:linear-gradient(to left,#ff8533, #e60000);
 	color:#fff;
 	border:none;
+}
+.now .head-btn{
+	color: #fff;
+	text-decoration: none;
 }
 
 /*home section*/
@@ -62,6 +66,9 @@
 }
 img{
 	max-width:100%;
+}
+.header-logo{
+	width: 200px;
 }
 .about{
 	font-family: "Poppins", sans-serif;
@@ -161,6 +168,7 @@ img{
   height:100%;
   border-radius:10px;
   transition: all 0.3s ease;
+  background-color: #fff;
 }
 .ico-wrapper{
 	display:flex;
@@ -256,6 +264,7 @@ img{
 .services-section{
 	position:relative;
 	padding:50px 0;
+	background-color: #f7f7f7;
 }
 .button2{
 	transform: rotate(270deg);
@@ -314,6 +323,7 @@ img{
 	margin-bottom:10px;
     border-radius:10px;	
     transition: all 0.3s ease;
+    height: 100%;
 }
 .num, .para-1{
 	text-align:center;
@@ -480,8 +490,9 @@ ul{
 		text-align:left;
 	}
 	.button3 {
-       justify-content:center;
+       
        display: flex;
+       justify-content:flex-start;
        padding: 20px 0;
     }
 	.email{
@@ -582,8 +593,9 @@ ul{
 		text-align:right;
 	}
 	.button3 {
-       justify-content: center;
+       
        display: flex;
+       justify-content: flex-end;
        padding-top: 20px;
     }
 	.email{
@@ -761,5 +773,10 @@ ul{
 	right:-590px;
 }
 }
-
-
+.mobile a{
+	color:#fff;
+	text-decoration: none;
+}
+.apart .footer-logo{
+	width: 200px;
+}

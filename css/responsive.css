@@ -35,6 +35,7 @@
     	margin-bottom: 30px;
     }
 
+
 }
 
 @media (max-width: 992px){
@@ -75,6 +76,12 @@
         left: auto;
         right: 0;
         font-size: 40px;
+    }
+    .faq_img{
+        margin-bottom: 30px;
+    }
+    .faq_sect:after{
+        display: none;
     }
 }
 @media (min-width: 768px){

@@ -3,7 +3,7 @@
 	background-position: center ;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 130px 0px 60px;
+	padding: 90px 0px 60px;
 	position: relative;
 	z-index: 1;
 }
@@ -320,8 +320,8 @@
 #contact-us-section{
 	background-image: url("../image/slider-3.jpg");
 }
-.contact_part{
-	padding-top: 80px;
+.address_section{
+	padding-top: 50px;
 	padding-bottom: 50px;
 }
 .contact_main_form .form-control{
@@ -356,7 +356,7 @@
   transition: .5s ease;
 }
 .contact_main_form  .submit_btn button:hover{
-	opacity: 0.8;
+	opacity: 0.8; 	
 }
 .contact_main_form  .submit_btn button:focus{
 	outline: none;
@@ -367,6 +367,7 @@
 	padding-top: 30px;
 
 }
+
 .add_list h3{
     font-size: 20px;
     color: #2f2f2f;
@@ -379,7 +380,13 @@
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 }
-
+.add_list p a{
+	text-decoration: none;
+	color: #2f2f2f;
+}
+.add_list p a:hover{
+	opacity: 0.8
+}
 .map_section{
 	height: 100%;
 }
@@ -397,13 +404,12 @@
 .page_lt_sec .lt_page_list{
 	background: #fff;
     margin-bottom: 40px;
-    border: solid 1px #ccc;
     padding: 10px;
 }
 .page_lt_sec .lt_page_list h3{
     color: #292929;
     font-size: 20px;
-    padding: 20px 30px;
+    padding: 10px 30px 15px 0;
     font-weight: 700;
 }
 .page_lt_sec .lt_page_list li a{
@@ -415,9 +421,8 @@
     font-weight: 500;
     line-height: 18px;
     font-family: 'Montserrat', sans-serif;
-    padding: 10px 20px 10px 32px;
-    border-bottom: solid 1px #ccc;  
-    
+    padding: 15px 20px 15px 32px;
+	background-color: #f7f7f7;
 }
 .page_lt_sec .lt_page_list li:last-child a{
 	border-bottom: 0;
@@ -639,4 +644,131 @@
 	font-size: 16px;
 	color: #777777;
 	text-align: right;
+}
+
+
+
+
+/* -- // FAQ sectiom // -- */
+.faq_sect {
+	position: relative;
+}
+.faq_sect:after{
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 40%;
+	background: -webkit-radial-gradient(#ccc 15%, transparent 6%);
+	background-size: 10px 10px;
+}
+
+.faq_img img{
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	width: 100%;
+}
+
+
+.faq_list_sect_tabs ul.accordion li a {
+  text-decoration: none;
+  color: inherit;
+  background: transparent;
+}
+
+.faq_list_sect_tabs ul.accordion .inner p{
+    padding-bottom: 10px;
+    color: #929090;
+    font-weight: 500;
+    font-family: 'Arimo', sans-serif;
+    line-height: 1.7;
+   /* font-size: 16px;*/
+
+}
+.faq_list_sect_tabs ul.accordion .inner {
+  padding:10px 15px;
+  overflow: hidden;
+  display: none;
+
+}
+.faq_list_sect_tabs ul.accordion .inner.show {
+  display: block;
+}
+.faq_list_sect_tabs ul.accordion li {
+  
+}
+
+.faqaccordion .accordion-item{
+	background-color: #fff;
+    border: 0;
+}
+.faqaccordion  .accordion-button {
+    font-size: 16px;
+    font-weight: 500;
+    color: #252525;
+    background: transparent;
+    padding: 15px 25px 15px;
+    position: relative;
+    border: 1px solid #dddddd;
+    border-radius: 0px;
+    margin-bottom: 20px;
+    background: #fff;
+
+}
+.faqaccordion  .accordion-button:focus{
+	outline: 0;
+	box-shadow: none;
+}
+.faqaccordion .accordion-button:not(.collapsed){
+	-webkit-box-shadow: 0 5px 10px #eee;
+    box-shadow: 0 5px 10px #eee;
+    color: #fff;
+    background: #ef2f12;
+    border: solid 1px #ef2f12;
+}
+.faqaccordion .accordion-button::after{
+	background-image:url(../image/arrow.svg);
+}
+.faqaccordion .accordion-button:not(.collapsed)::after{
+	background-image:url(../image/arrow.svg);
+}
+
+/*.faq_list_sect_tabs ul.accordion li a.toggle:after{
+    content: "";
+    position: absolute;
+    opacity: 1;
+    right: 21px;
+    top: 16px;
+    width: 2px;
+    height: 12px;
+    background: #333;
+    transition: all 0.5s ease;
+}
+
+.faq_list_sect_tabs ul.accordion li a.toggle:before{
+    content: "";
+    position: absolute;
+    opacity: 1;
+    right: 16px;
+    top: 21px;
+    width: 12px;
+    height: 2px;
+    background: #333;
+}*/
+/*.faq_list_sect_tabs ul.accordion li a.toggle:hover:after, .faq_list_sect_tabs ul.accordion li a.toggle:hover:before{
+	background: #fff;
+}
+
+.faq_list_sect_tabs ul.accordion li a.toggle.active_icon:after{
+    opacity: 0 ;
+}
+.faq_list_sect_tabs ul.accordion li a.toggle.active_icon:before{
+    background: #fff !important;
+}*/
+.faq_list_sect_tabs ul.accordion li a.toggle:hover {
+    color: #fff;
+    background: linear-gradient(to left,#ff8533, #e60000);
+    border: solid 1px transparent;
 }
