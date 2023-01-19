@@ -58,7 +58,7 @@ $(document).ready(function(){
 
         $('.page_sect_cont').each(function(i) {
 
-            if ($(this).position().top - 80 <= scrol_top) {
+            if ($(this).position().top - 100 <= scrol_top) {
                 $('.side_nav').find(".active-side-nav").removeClass('active-side-nav');
                 $('.side_nav li').eq(i).addClass('active-side-nav');
             }       

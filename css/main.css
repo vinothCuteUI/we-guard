@@ -82,7 +82,6 @@
 }
 .page-title h2{
 	position: relative;
-    display: block;
     font-size: 30px;
     line-height: 40px;
     color: #2f2f2f;
@@ -90,7 +89,6 @@
     padding: 16px 0;
 	z-index: 1;
 	margin-bottom: 40px;
-	overflow: hidden;
 }
 .page-title span{
 	position: absolute;
@@ -106,6 +104,26 @@
     opacity: .10;
     font-family: "Arimo", sans-serif;
 }
+
+.page-content-title h2{
+	position: relative;
+    font-size: 28px;
+    line-height: 40px;
+    color: #2f2f2f;
+    font-weight: 600;
+    padding: 5px 0 5px 0px;
+	z-index: 1;
+	margin-bottom: 20px;
+}
+/*.page-content-title h2:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 2px;
+	background-color: #ccc;
+}*/
 .centr-title {
 	text-align: center;
 }
@@ -460,10 +478,14 @@
 	top: 10px;
 	font-size: 15px;
 }
+.page_text_para{
+	margin-bottom: 40px;
+}
 .page_text_para h3{
 	font-size: 22px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 
