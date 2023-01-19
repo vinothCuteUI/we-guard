@@ -109,7 +109,7 @@
 					<div class="address_section row">
 						<div class="col-12 col-lg-5">
 							<div class="add_list">
-								<h3>Location</h3>
+								<h3><i class="fa fa-map-marker" aria-hidden="true"></i> Location</h3>
 								<p>No.20 , First Floor, <br/>
 								Monticello Apartment, <br/>
 								Kamarajar Salai,<br/>
@@ -119,7 +119,7 @@
 						</div>
 						<div class="col-12 col-lg-3">
 							<div class="add_list">
-								<h3>Call Us</h3>
+								<h3><i class="fa fa-phone" aria-hidden="true"></i> Call Us</h3>
 								<p><a href="https://wa.link/laxfb9" target="_blank">+91 8870132424</a></p>
 								
 							</div>	
@@ -127,7 +127,7 @@
 						</div>
 						<div class="col-12 col-lg-4">
 							<div class="add_list">
-								<h3>Email</h3>
+								<h3><i class="fa fa-envelope" aria-hidden="true"></i> Email</h3>
 								<p><a href="mailto:enquiry@weguard.co.in">enquiry@weguard.co.in</a></p>
 								
 							</div>	
@@ -135,40 +135,50 @@
 					</div>
 					<div class="contact_part ">
 						<div class="page-title">
-							<h2>Contact Us</h2>
+							<h2 class="m-0">Contact Us</h2>
 							<span>informaer</span>
 						</div>
-                        <form class="row contact_main_form">
+
+                        <form class="row contact_main_form" id="contact_form_submit">
+                        	<div class="alert alert-success alert-dismissible fade " role="alert">
+							  <strong>Thanks for reach us.!</strong> We get back to you soon.
+							  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+							</div>
                             <div class="col-12 col-lg-6 ">
                                 <div class="form-group">
-                                    <input type="text" name="fname" placeholder="First Name *" class="form-control">
+                                    <input type="text" name="yourname" placeholder="Your Name *" class="form-control form_inputs">
+                                    <p class="error-msg" >Please enter your name...!</p>
                                 </div>
                             </div>    
                             <div class="col-12 col-lg-6 ">    
                                 <div class="form-group">
-                                    <input type="text" name="lname" placeholder="Last Name *" class="form-control">
+                                    <input type="email" name="email" placeholder="Email ID *" class="form-control form_inputs">
+                                    <p class="error-msg" >Please enter your Email ID...!</p>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-6 ">    
                                 <div class="form-group">
-                                    <input type="number" name="phone" placeholder="Phone No *" class="form-control">
+                                    <input type="number" name="phone" placeholder="Phone No *" class="form-control form_inputs">
+                                    <p class="error-msg" >Please enter your Mobile No...!</p>
                                 </div>
                             </div>    
                             <div class="col-12 col-lg-6 ">    
                                 <div class="form-group">
-                                    <input type="email" name="email"  placeholder="Email *" class="form-control">
+                                    <input type="text" name="subject"  placeholder="Subject *" class="form-control form_inputs">
+                                    <p class="error-msg" >Please enter subject...!</p>
                                 </div>
                             </div>
                             
                             
                             <div class="col-12 col-lg-12 ">
                                 <div class="form-group">
-                                    <textarea name="message" class="form-control" placeholder="Message *"></textarea>
+                                    <textarea name="message" name="message" class="form-control form_inputs" placeholder="Message *"></textarea>
+                                    <p class="error-msg">Please enter your detail message...!</p>
                                 </div>
                             </div>
 
                             <div class="submit_btn">
-                            	<button>SUBMIT</button>
+                            	<button type="submit">SUBMIT</button>
                             </div>
                             
                         </form>
@@ -211,17 +221,17 @@
 			  	<h2>Services</h2>
 				  <ul>
 					<li>
-						<a href="services.html#prop-document/" target="_blank"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Property Documentation</a>
+						<a href="services.html#prop-document/" ><i class="fa fa-angle-double-right" aria-hidden="true"></i> Property Documentation</a>
 					</li>
-					<li><a href="services.html#prop-registration" target="_blank"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Property Registration Buying and Selling</a></li>
-					<li><a href="services.html" target="_blank"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Property Revenue record service</a></li>
-					<li><a href="services.html" target="_blank"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Wet Land Convertion</a></li>
-					<li><a href="services.html" target="_blank"><i class="fa fa-angle-double-right" aria-hidden="true"></i> All NOC related Land from Public Works Department(PWD)</a></li>
-					<li><a href="services.html" target="_blank"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Property Annual Maintenance Service</a></li>
-					<li><a href="services.html" target="_blank"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Property Investment Services</a></li>
-					<li><a href="services.html" target="_blank"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Join Venture Proposal and Agreement</a></li>
-					<li><a href="services.html" target="_blank"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Intellectual Property Rights(Trademarks,copyright and patent)</a></li>
-					<li><a href="services.html" target="_blank"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Property Litifation Solutions</a></li>
+					<li><a href="services.html#prop-registration" ><i class="fa fa-angle-double-right" aria-hidden="true"></i> Property Registration Buying and Selling</a></li>
+					<li><a href="services.html" ><i class="fa fa-angle-double-right" aria-hidden="true"></i> Property Revenue record service</a></li>
+					<li><a href="services.html" ><i class="fa fa-angle-double-right" aria-hidden="true"></i> Wet Land Convertion</a></li>
+					<li><a href="services.html" ><i class="fa fa-angle-double-right" aria-hidden="true"></i> All NOC related Land from Public Works Department(PWD)</a></li>
+					<li><a href="services.html" ><i class="fa fa-angle-double-right" aria-hidden="true"></i> Property Annual Maintenance Service</a></li>
+					<li><a href="services.html" ><i class="fa fa-angle-double-right" aria-hidden="true"></i> Property Investment Services</a></li>
+					<li><a href="services.html" ><i class="fa fa-angle-double-right" aria-hidden="true"></i> Join Venture Proposal and Agreement</a></li>
+					<li><a href="services.html" ><i class="fa fa-angle-double-right" aria-hidden="true"></i> Intellectual Property Rights(Trademarks,copyright and patent)</a></li>
+					<li><a href="services.html" ><i class="fa fa-angle-double-right" aria-hidden="true"></i> Property Litifation Solutions</a></li>
 				  </ul>
 			 </div>
 		    </div>
@@ -230,10 +240,10 @@
 			  	<h2>Quick Links</h2>
 			  	<ul>
 				   <li><a href="index.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Home</a></li>
-				   <li><a href="about-us.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About Us</a></li>
-				   <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Blogs</a></li>
-				   <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> FAQ</a></li>
-				   <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Careers</a></li>
+				   <li><a href="services.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Services</a></li>
+				   <li><a href="about-us.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About Us</a></li>			   
+				   <li><a href="contact-us.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Contact Us</a></li>
+				   
 				</ul>
 			  </div>
 			 
@@ -258,5 +268,54 @@
 <script src="css/bootstrap.bundle.min.js"></script>
 <script src="owl-carousel/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    function submitForm(){
+  // Initiate Variables With Form Content
+      var name = $("#yourname").val();
+      var email = $("#email").val();
+      var phone = $("#phone").val();
+      var subject = $("#subject").val();
+      var message = $("#message").val();
+        $.ajax({
+            type: "POST",
+            url: "contact-form.php",
+            data: "name=" + name + "&email=" + email + "&subject=" + subject + "&phone=" + phone + "&message=" + message,
+            success : function(text){
+                if (text == "success"){
+                    formSuccess();
+                }
+            }
+        });
+    }
+    function formSuccess(){
+        // $( "#msgSubmit" ).removeClass( "hidden" );
+
+        $("#contact_form_submit").find("alert").addClass("show");
+        $("#contact_form_submit")[0].reset();
+        setTimeout(function(){
+        	$("#contact_form_submit").find("alert").removeClass("show");
+        }, 3000)
+    }
+
+    $("#contact_form_submit").submit(function(event){
+        // cancels the form submission
+
+        event.preventDefault();
+        $(".form_inputs").each(function(n){
+          if ($.trim($(this).val()) == "") {
+             $(this).next("p").addClass("invalid-input");
+          }else{
+            submitForm();
+            $(this).next("p").removeClass("invalid-input");
+          }
+        })
+        
+        
+    });
+  })
+
+</script>
 </body>
 </html>
