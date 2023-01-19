@@ -591,10 +591,10 @@
   transition: .5s ease;
 }
 .testmonial_section .carousel-control-prev span i:hover{
-	color: #feb403;
+	color: #ff8533;
 }
 .testmonial_section .carousel-control-next span i:hover{
-	color: #feb403;
+	color: #ff8533;
 }
 .slider_part .test_img{
 	position: relative;
@@ -655,7 +655,7 @@
 	font-weight: 500;
 }
 .testmonial_section .slider_part .slider_cont .right_sec p{
-	color: #feb403;
+	color: #ff8533;
 	margin-top: 0px;
 
 }

@@ -78,7 +78,7 @@ img{
 	padding:50px 0;
 }
 .navs{
-	box-shadow: 0 0 5px #ccc;
+	box-shadow: 0 2px 5px #ccc;
 	background-color: #fff;
 	transition: all 0.5s ease;
 	position: relative;
