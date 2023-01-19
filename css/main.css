@@ -346,12 +346,16 @@
 	box-shadow: none;
 	border-radius: 0px;
 }
+.contact_main_form  .form-group{
+	position: relative;
+	padding-bottom: 25px;
+}
 .contact_main_form  .form-group input{
 	border:none;
 	border-bottom: 1px solid #ccc;
 	width: 100%;
 	height: 40px;
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 }
 .contact_main_form  .form-group textarea{
 	width: 100%;
@@ -408,7 +412,19 @@
 .map_section{
 	height: 100%;
 }
-
+.error-msg{
+	color: red;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+.error-msg.invalid-input{
+	opacity: 1;
+	visibility: visible;
+}
 
 
 /* ========== Service style ========== */
@@ -520,6 +536,7 @@
 }
 .slider_part .carousel-inner .carousel-item{
 	padding: 120px 0px;
+	height: 500px;
 }
 
 .testmonial_section .carousel-indicators {
