@@ -163,6 +163,7 @@ img{
 }
 /*service section*/
 .join{
+	position: relative;
   box-shadow:0 0 5px #5c5c3d3d;
   padding: 10px;
   height:100%;
@@ -170,11 +171,22 @@ img{
   transition: all 0.3s ease;
   background-color: #fff;
 }
+.join > a{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
 .ico-wrapper{
 	display:flex;
 	justify-content:center;
 	padding-top:40px;
 	
+}
+.ico-wrapper i{
+	font-size: 40px;
+	color: #000;
 }
 .pro{
 	text-align:center;
@@ -252,28 +264,38 @@ img{
 	color:#ffff;
 	
 }
-.chat{
-	background:linear-gradient(#e60000,#ff8533);
-	padding:5px 20px;
-	text-decoration:none;
-	color:#fff;
-	border-radius:5px;
-	font-size:13px;
-	
-}
+
 .services-section{
 	position:relative;
 	padding:50px 0;
 	background-color: #f7f7f7;
 }
-.button2{
-	transform: rotate(270deg);
-	position:absolute;
-	right:-50px;
-	bottom:50%;
+.chat_btn{
+	position: fixed;
+    right: 0;
+    bottom: 50%;
+    width: 85px;
+    height: 200px;
+    overflow: hidden;
+    z-index: 999;
 }
-.button2 a:hover{
+.chat_btn .chat:hover{
 	color:#fff;
+	opacity: 0.9;
+}
+.chat{
+	background:linear-gradient(#e60000,#ff8533);
+	padding: 5px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+      font-size: 18px;
+    transform: rotate(-90deg) translate(-82px, -20px);
+    display: block;
+    width: 175px;
+    text-align: center;
+	
 }
 /*banner section*/
 .get{
@@ -286,7 +308,7 @@ img{
 .button3{
 	justify-content:flex-end;
 	display:flex;
-	padding-top:20px ;
+	padding:20px 0 50px;
 }
 .button3:hover a{
 	color:#fff;
@@ -306,7 +328,9 @@ img{
 	background-color:#000;
 }
 .img-2 img{
-	filter:contrast(130%);
+	/*filter:contrast(130%);*/
+	width: 60%;
+	height: auto;
 }
 /*achievements section*/
 .img-3 img{
@@ -493,7 +517,7 @@ ul{
        
        display: flex;
        justify-content:flex-start;
-       padding: 20px 0;
+       padding: 20px 0 50px;
     }
 	.email{
 		font-size:12px;

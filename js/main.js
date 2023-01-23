@@ -51,6 +51,9 @@ $(document).ready(function(){
 
     })
 
+    
+    
+
     $(window).scroll(function(){
         var scrol_top = $(window).scrollTop();
         // console.log(scrol_top);

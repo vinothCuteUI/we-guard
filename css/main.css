@@ -496,6 +496,8 @@
 }
 .page_text_para{
 	margin-bottom: 40px;
+	border-bottom: solid 1px #ccc;
+	padding-bottom: 30px;
 }
 .page_text_para h3{
 	font-size: 22px;
@@ -503,24 +505,34 @@
     margin-bottom: 10px;
     margin-top: 30px;
 }
+.page_text_para p > img{
+	float: left;
+    margin: 0 10px 5px 0;
+    width: 325px;
+    height: auto;
+}
 
-
+#serviceslide{
+	float: left;
+	margin: 0 10px 5px 0;
+    width: 325px;
+}
 /* ====== Testimonials ======= */
 .testmonial_section{
 	padding: 50px 0 120px;
 }
 
-.slider_part{
+.testmonial_part{
 	background: url(../image/test_back_img.jpg) no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
-	width: 100%;
+	
 	padding: 0px;
 	border-radius: 0 40px 40px 0;
 	position: relative;
 	z-index: 2;
 }
-.slider_part:after{
+.testmonial_part:after{
 	position: absolute;
 	content: "";
 	width: 100%;
@@ -530,11 +542,11 @@
 	border-radius: 0 40px 40px 0;
 	background: rgba(0, 0, 0, 0.83);
 }
-.slider_part .carousel-inner{
+.testmonial_part .carousel-inner{
 	z-index: 2;
 	/*padding: 80px 0px;*/
 }
-.slider_part .carousel-inner .carousel-item{
+.testmonial_part .carousel-inner .carousel-item{
 	padding: 120px 0px;
 	height: 500px;
 }
@@ -613,69 +625,106 @@
 .testmonial_section .carousel-control-next span i:hover{
 	color: #ff8533;
 }
-.slider_part .test_img{
+.testimonials_img{
 	position: relative;
 
 }
-.slider_part .test_img:after{
+.testimonials_img:after{
 	content: "";
 	position:absolute;
-	right: 20px;
-    bottom: -40px;
+	right: 6%;
+    bottom: -15%;
     width: 70%;
-    height: 70%;
+    height: 100%;
 	background: rgba(85, 85, 85, 0.5098039215686274);
 }
-.slider_part .test_img img{
-	width: 65%;
+.testimonials_img img{
+	width: 70%;
 	height: auto;
 	position: relative;
 	z-index: 1;
 }
-.slider_sec .slider_cont{
-	margin-left: 50px;
-	z-index: 3;
-	position: absolute;
-}
-.slider_cont .test_txt{
+
+.testimonials_txt{
 	position: relative;
 }
-.testmonial_section .slider_cont .test_txt > p{
+.testimonials_txt > p{
 	color: #fff;
 	text-align: right;
 	line-height: 1.8;
 	padding-right: 30px;
     padding-left: 55px;
 }
-.testmonial_section .slider_part .slider_cont .left_icon{
-
+.testmonial_content .testimonials_icon{
 	position: absolute;
     left: 25%;
     top: 75%;
     z-index: 3;
 }
-.testmonial_section .slider_part .slider_cont .left_icon i{
+.testmonial_content .testimonials_icon i{
 	color: #323232 ;
 	display: inline-block;
 	font-size: 40px;
 }
-.testmonial_section .slider_part .slider_cont .test_txt .right_sec{
+.testimonials_info{
 	text-align: right;
-	padding-left: 30px;
+	padding-left: 60px;
     padding-right: 30px;
     margin-top: 20px;
 }
-.testmonial_section .slider_part .slider_cont .right_sec h4{
+.testimonials_info h4{
 	color: #fff;
 	font-size: 25px;
 	font-family: 'Rubik', sans-serif;
 	font-weight: 500;
 }
-.testmonial_section .slider_part .slider_cont .right_sec p{
+.testimonials_info p{
 	color: #ff8533;
 	margin-top: 0px;
 
 }
+#testimonialspage .testmonial_content{
+	background-color: #000;
+    padding: 30px 15px;
+    border-radius: 40px;
+    position: relative;
+    z-index: 2;
+
+}
+#testimonialspage .testimonials_txt > p{
+	padding-right: 8px;
+	padding-left: 0px;
+	line-height: 1.5;
+	overflow: auto;
+	max-height: 142px;
+}
+#testimonialspage .testimonials_info h4{
+	font-size: 20px;
+}
+#testimonialspage .testimonials_icon{
+	left: 5%;
+}
+/* width */
+.testimonials_txt > p::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+.testimonials_txt > p::-webkit-scrollbar-track {
+  background: #777;
+}
+
+/* Handle */
+.testimonials_txt > p::-webkit-scrollbar-thumb {
+  background: #222;
+}
+
+/* Handle on hover */
+.testimonials_txt > p::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
 .right_cont {
 	padding-top: 60px;
 }
@@ -684,7 +733,6 @@
 	color: #777777;
 	text-align: right;
 }
-
 
 
 
@@ -702,7 +750,9 @@
 	background: -webkit-radial-gradient(#ccc 15%, transparent 6%);
 	background-size: 10px 10px;
 }
-
+#faqsectionpage:after{
+	display: none;
+}
 .faq_img img{
 	width: 100%;
 	position: relative;
